@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Datang Ramadhan</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Ambient Background -->
+    <div class="ambient-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Stars Container -->
+    <div class="stars-container" id="stars"></div>
+
+    <!-- Floating Particles -->
+    <div class="particles-container" id="particles"></div>
+
+    <!-- Islamic Pattern Overlay -->
+    <div class="pattern-overlay"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <!-- Moon -->
+                <div class="moon-container">
+                    <div class="moon">
+                        <div class="moon-glow"></div>
+                        <div class="moon-crater crater-1"></div>
+                        <div class="moon-crater crater-2"></div>
+                        <div class="moon-crater crater-3"></div>
+                    </div>
+                    <div class="moon-star star-1"></div>
+                    <div class="moon-star star-2"></div>
+                    <div class="moon-star star-3"></div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="hero-text">
+                    <p class="greeting reveal-text">Marhaban Ya</p>
+                    <h1 class="main-title reveal-text">Ramadhan</h1>
+                    <p class="subtitle reveal-text">Bulan penuh berkah, rahmat, dan ampunan</p>
+                    
+                    <!-- Countdown -->
+                    <div class="countdown-container reveal-text">
+                        <p class="countdown-label">Ramadhan 1446 H dalam</p>
+                        <div class="countdown" id="countdown">
+                            <div class="countdown-item">
+                                <span class="countdown-value" id="days">00</span>
+                                <span class="countdown-unit">Hari</span>
+                            </div>
+                            <div class="countdown-separator">:</div>
+                            <div class="countdown-item">
+                                <span class="countdown-value" id="hours">00</span>
+                                <span class="countdown-unit">Jam</span>
+                            </div>
+                            <div class="countdown-separator">:</div>
+                            <div class="countdown-item">
+                                <span class="countdown-value" id="minutes">00</span>
+                                <span class="countdown-unit">Menit</span>
+                            </div>
+                            <div class="countdown-separator">:</div>
+                            <div class="countdown-item">
+                                <span class="countdown-value" id="seconds">00</span>
+                                <span class="countdown-unit">Detik</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <span>Gulir ke bawah</span>
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <div class="section-header">
+                <h2 class="section-title">Keutamaan Ramadhan</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="features-grid">
+                <article class="feature-card" data-delay="0">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/>
+                            <circle cx="12" cy="12" r="4"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Lailatul Qadr</h3>
+                    <p class="card-desc">Malam yang lebih baik dari seribu bulan, penuh keberkatan dan ampunan.</p>
+                    <div class="card-glow"></div>
+                </article>
+
+                <article class="feature-card" data-delay="100">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Al-Quran</h3>
+                    <p class="card-desc">Bulan turunnya Al-Quran sebagai petunjuk bagi seluruh alam semesta.</p>
+                    <div class="card-glow"></div>
+                </article>
+
+                <article class="feature-card" data-delay="200">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Rahmat</h3>
+                    <p class="card-desc">Pintu-pintu surga dibuka lebar, pintu-pintu neraka ditutup rapat.</p>
+                    <div class="card-glow"></div>
+                </article>
+
+                <article class="feature-card" data-delay="300">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Sahur & Berbuka</h3>
+                    <p class="card-desc">Waktu-waktu mustajab untuk berdoa dan mendapat keberkatan.</p>
+                    <div class="card-glow"></div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="quote-section" id="quote">
+            <div class="quote-container">
+                <div class="quote-decoration">
+                    <span class="quote-mark">"</span>
+                </div>
+                <blockquote class="quote-text">
+                    Barangsiapa yang mendirikan Ramadhan karena iman dan mengharap pahala, 
+                    maka diampunilah dosa-dosanya yang telah lalu.
+                </blockquote>
+                <cite class="quote-source">— HR. Bukhari & Muslim</cite>
+            </div>
+        </section>
+
+        <!-- Prayer Times Section -->
+        <section class="prayer-section" id="prayer">
+            <div class="section-header">
+                <h2 class="section-title">Jadwal Waktu Sholat</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="prayer-cards">
+                <div class="prayer-card" data-prayer="subuh">
+                    <span class="prayer-name">Subuh</span>
+                    <span class="prayer-time">04:35</span>
+                </div>
+                <div class="prayer-card" data-prayer="dzuhur">
+                    <span class="prayer-name">Dzuhur</span>
+                    <span class="prayer-time">11:58</span>
+                </div>
+                <div class="prayer-card" data-prayer="ashar">
+                    <span class="prayer-name">Ashar</span>
+                    <span class="prayer-time">15:15</span>
+                </div>
+                <div class="prayer-card" data-prayer="maghrib">
+                    <span class="prayer-name">Maghrib</span>
+                    <span class="prayer-time">17:58</span>
+                </div>
+                <div class="prayer-card" data-prayer="isya">
+                    <span class="prayer-name">Isya</span>
+                    <span class="prayer-time">19:08</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="footer-text">Semoga Ramadhan ini membawa keberkahan bagi kita semua</p>
+                <div class="footer-decoration">
+                    <span class="decoration-star"></span>
+                    <span class="decoration-moon"></span>
+                    <span class="decoration-star"></span>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Lanterns (Decorative) -->
+    <div class="lanterns-container">
+        <div class="lantern lantern-1"></div>
+        <div class="lantern lantern-2"></div>
+        <div class="lantern lantern-3"></div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
